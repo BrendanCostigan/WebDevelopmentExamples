@@ -1,0 +1,11 @@
+/* . = class */
+/* # = id    */
+
+
+.box {
+	background: lightgray;
+	border-radius: 10px;		/* this gives the box rounded corners */
+	height: 200px;
+	position: static;
+	width: 200px;
+}
