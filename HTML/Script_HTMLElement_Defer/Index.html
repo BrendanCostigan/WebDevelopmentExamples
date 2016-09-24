@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Example of Script Defer</title>
+	<style>
+	</style>
+</head>
+
+<body>
+	<h1>Check the browser console to see the output</h1>
+	<script src="Script_HTMLElement_Defer.js" defer></script>
+	<p>What should happen is that the above script will be displayed in the console after the one below because of the defer option.</p>
+	<p>Note that this only works when you use a script file rather than inline code.</p>
+	<p>Interesting comments on the following page <a href="http://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html">Growing with the Web</a> about when to use defer, async or nothing.
+	<script>
+		console.log("Second script")
+	</script>
+</body>
+</html>

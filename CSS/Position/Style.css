@@ -1,0 +1,55 @@
+/* . = class */
+/* # = id    */
+
+
+.spacer {
+  margin-top: 10px;
+}
+
+/* static */
+
+#box_static_1 {
+	position: static;
+	width: 200px;
+	height: 200px;
+	background: #ee3e64;
+}
+
+#box_static_2 {
+	position: static;
+	width: 200px;
+	height: 200px;
+	background: #44accf;
+}
+
+#box_static_3 {
+	position: static;
+	width: 200px;
+	height: 200px;
+	background: #b7d84b;
+}
+
+
+/* relative */
+
+#box_relative_1 {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	background: #ee3e64;
+}
+
+#box_relative_2 {
+	position: relative;
+  left: 200px;      /* added to this relative property to make it move right by 200px */
+	width: 200px;
+	height: 200px;
+	background: #44accf;
+}
+
+#box_relative_3 {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	background: #b7d84b;
+}

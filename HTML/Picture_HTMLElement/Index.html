@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Example of HTML Picture element</title>
+	<style>
+		img {
+			max-width: 100%;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>If the page size if less than 500px then a cat is displayed else a dog is displayed.</h1>
+	<picture>
+		<source srcset="maine_coon.jpg" media="(max-width: 500px)">
+		<img src="toller.jpg">
+	</picture>
+</body>
+</html>
