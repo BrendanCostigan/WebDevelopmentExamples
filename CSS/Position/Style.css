@@ -2,8 +2,11 @@
 /* # = id    */
 
 
-.spacer {
-  margin-top: 10px;
+em {
+	background-color: lightgray;
+	border-radius: 3px;		/* this gives the box rounded corners */
+	padding-left: 2px;		/* give the background some room */
+	padding-right: 2px;
 }
 
 /* static */
@@ -41,7 +44,7 @@
 
 #box_relative_2 {
 	position: relative;
-  left: 200px;      /* added to this relative property to make it move right by 200px */
+  	left: 200px;      /* added to this relative property to make it move right by 200px */
 	width: 200px;
 	height: 200px;
 	background: #44accf;
@@ -53,3 +56,60 @@
 	height: 200px;
 	background: #b7d84b;
 }
+
+
+/* relative to a relative */
+
+#box_relative_parent {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	background: #ee3e64;
+}
+
+#box_relative_child {
+	position: relative;
+  	left: 200px;      /* added to this relative property to make it move right by 200px */
+	width: 200px;
+	height: 200px;
+	background: #44accf;
+}
+
+/* absolute */
+
+#box_absolute_1 {
+	position: absolute;
+	top: 2000;
+	left: 0;
+	width: 200px;
+	height: 200px;
+	background: #ee3e64;
+}
+
+#box_absolute_2 {
+	position: absolute;
+	top: 2000;
+	right: 0;
+	width: 200px;
+	height: 200px;
+	background: #44accf;
+}
+
+#box_absolute_3 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 200px;
+	height: 200px;
+	background: #b7d84b;
+}
+
+#box_absolute_4 {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 200px;
+	height: 200px;
+	background: #ebde52;
+}
+

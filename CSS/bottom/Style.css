@@ -1,0 +1,28 @@
+/* . = class */
+/* # = id    */
+
+#makemetall {
+	height: 1500px;
+}
+
+
+div {
+	text-align: center;
+	font-size: large;
+}
+
+#greenbox {
+	background-color: green;
+	bottom: 0px;
+	height: 200px;
+	position: relative;
+	width: 200px;
+}
+
+#redbox {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	bottom: 0px;
+	background-color: red;
+}

@@ -4,13 +4,13 @@
 <head>
     <meta charset="utf-8">
     <link href="style.css" rel="stylesheet" />
-    <title>CSS - Position</title>
+    <title>CSS - position</title>
 </head>
 
 <body>
     <h1>This provides examples of using the CSS postion command</h1>
 
-    <p>From this article <a href="http://alistapart.com/article/css-positioning-101" target="_blank">question</a></p>
+    <p>From this <a href="http://alistapart.com/article/css-positioning-101" target="_blank">article</a></p>
 
     <h1>Position: static</h1>
     <p>Static is the default and so will be used if you give no other option. It just stacks the boxes vertically.</p>
@@ -35,6 +35,24 @@
         <div id="box_relative_2" class="box"></div>
         <div id="box_relative_3" class="box"></div>
 
+        <h1>Position: relative to a relative</h1>
+        <p>This practice is more common with the parent elements set to <em>position: absolute</em> rather than <em>position:relative</em>.</p>
+        <div id="box_relative_parent">
+            <div id="box_relative_child"></div>
+        </div>
+
+        <div id="box_static_1" class="box"></div>
+        <div id="box_static_2" class="box"></div>
+        <div id="box_static_3" class="box"></div>
+
+        <h1>Position: absolute</h1>
+        <p>Unlike the static and relative values, an absolutely positioned element is removed from the normal flow. This means
+            you can put it anywhere, and it won’t affect or be affected by any other element in the flow. </p>
+
+        <div id="box_absolute_1"></div>
+        <div id="box_absolute_2"></div>
+        <div id="box_absolute_3"></div>
+        <div id="box_absolute_4"></div>
 
 </body>
 
