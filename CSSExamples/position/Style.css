@@ -15,21 +15,21 @@ em {
 	position: static;
 	width: 200px;
 	height: 200px;
-	background: #ee3e64;
+	background: red;
 }
 
 #box_static_2 {
 	position: static;
 	width: 200px;
 	height: 200px;
-	background: #44accf;
+	background: blue
 }
 
 #box_static_3 {
 	position: static;
 	width: 200px;
 	height: 200px;
-	background: #b7d84b;
+	background: yellow;
 }
 
 
@@ -39,7 +39,7 @@ em {
 	position: relative;
 	width: 200px;
 	height: 200px;
-	background: #ee3e64;
+	background: red;
 }
 
 #box_relative_2 {
@@ -47,14 +47,14 @@ em {
   	left: 200px;      /* added to this relative property to make it move right by 200px */
 	width: 200px;
 	height: 200px;
-	background: #44accf;
+	background: blue;
 }
 
 #box_relative_3 {
 	position: relative;
 	width: 200px;
 	height: 200px;
-	background: #b7d84b;
+	background: yellow;
 }
 
 
@@ -64,35 +64,36 @@ em {
 	position: relative;
 	width: 200px;
 	height: 200px;
-	background: #ee3e64;
+	background: green;
 }
 
 #box_relative_child {
-	position: relative;
-  	left: 200px;      /* added to this relative property to make it move right by 200px */
-	width: 200px;
+	background: yellow;
 	height: 200px;
-	background: #44accf;
+	position: relative;
+	width: 200px;
+  	left: 200px;      /* added to this relative property to make it move right by 200px */
+	top: 0px;		  /* need to specify a top to prevent the text in the parent div causing the box to start a line lower */
 }
 
 /* absolute */
 
 #box_absolute_1 {
 	position: absolute;
-	top: 2000;
+	top: 0;
 	left: 0;
 	width: 200px;
 	height: 200px;
-	background: #ee3e64;
+	background: red;
 }
 
 #box_absolute_2 {
 	position: absolute;
-	top: 2000;
+	top: 0;
 	right: 0;
 	width: 200px;
 	height: 200px;
-	background: #44accf;
+	background: blue;
 }
 
 #box_absolute_3 {
@@ -101,7 +102,7 @@ em {
 	left: 0;
 	width: 200px;
 	height: 200px;
-	background: #b7d84b;
+	background: yellow;
 }
 
 #box_absolute_4 {
@@ -110,6 +111,12 @@ em {
 	right: 0;
 	width: 200px;
 	height: 200px;
-	background: #ebde52;
+	background: green;
+}
+
+.absolute_parent {
+	position: absolute;
+	height: 800px;
+	width: 600px;
 }
 

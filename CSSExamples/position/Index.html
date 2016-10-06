@@ -10,19 +10,18 @@
 <body>
     <h1>This provides examples of using the CSS postion command</h1>
 
-    <p>From this <a href="http://alistapart.com/article/css-positioning-101" target="_blank">article</a></p>
+    <p>From this <a href="http://alistapart.com/article/css-positioning-101" target="_blank">article</a>.</p>
 
-    <h1>Position: static</h1>
+    <h1>Position: static (example A)</h1>
     <p>Static is the default and so will be used if you give no other option. It just stacks the boxes vertically.</p>
     <p>If you want to start shifting those elements around using offset properties such as <em>top</em>, <em>right</em>, <em>bottom</em>,
         and <em>left</em>, you’re out of luck. These properties are unavailable to a static element.</p>
 
+    <div id="box_static_1" class="box">Red</div>
+    <div id="box_static_2" class="box">Blue</div>
+    <div id="box_static_3" class="box">Yellow</div>
 
-    <div id="box_static_1" class="box"></div>
-    <div id="box_static_2" class="box"></div>
-    <div id="box_static_3" class="box"></div>
-
-    <h1>Position: relative</h1>
+    <h1>Position: relative (example B)</h1>
     <p>We can adjust a relatively positioned element with offset properties <em>top</em>, <em>right</em>, <em>bottom</em>, and
         <em>left</em>.
         <p>In the example below I have moved the second box by adding <em>left: 200px</em> to this relative property to make
@@ -31,28 +30,30 @@
             green block (#box_3) on the bottom. It’s sitting underneath the blue block, even though the blue block isn’t
             directly above it. When you use the offset property to shift a relatively positioned element, it doesn’t affect
             the element(s) that follow. The green box is still positioned as if the blue box were in its non-offset position.</p>
-        <div id="box_relative_1" class="box"></div>
-        <div id="box_relative_2" class="box"></div>
-        <div id="box_relative_3" class="box"></div>
+        <div id="box_relative_1" class="box">Red</div>
+        <div id="box_relative_2" class="box">Blue</div>
+        <div id="box_relative_3" class="box">Yellow</div>
 
-        <h1>Position: relative to a relative</h1>
+        <h1>Position: relative to a relative (example C)</h1>
         <p>This practice is more common with the parent elements set to <em>position: absolute</em> rather than <em>position:relative</em>.</p>
-        <div id="box_relative_parent">
-            <div id="box_relative_child"></div>
+        <div id="box_relative_parent">Green
+            <div id="box_relative_child">Yellow</div>
         </div>
 
-        <div id="box_static_1" class="box"></div>
-        <div id="box_static_2" class="box"></div>
-        <div id="box_static_3" class="box"></div>
+        <div id="box_static_1" class="box">Red</div>
+        <div id="box_static_2" class="box">Blue</div>
+        <div id="box_static_3" class="box">Yellow</div>
 
         <h1>Position: absolute</h1>
         <p>Unlike the static and relative values, an absolutely positioned element is removed from the normal flow. This means
-            you can put it anywhere, and it won’t affect or be affected by any other element in the flow. </p>
+            you can put it anywhere, and it won’t affect or be affected by any other element in the flow. (Simialr to Examples E and F in the article).</p>
 
-        <div id="box_absolute_1"></div>
-        <div id="box_absolute_2"></div>
-        <div id="box_absolute_3"></div>
-        <div id="box_absolute_4"></div>
+        <div class="absolute_parent">
+            <div id="box_absolute_1">Red</div>
+            <div id="box_absolute_2">Blue</div>
+            <div id="box_absolute_3">Yellow</div>
+            <div id="box_absolute_4">Green</div>
+        </div>
 
 </body>
 

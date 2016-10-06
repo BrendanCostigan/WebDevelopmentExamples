@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <title>nodeValue, innerHTML, textContent and innerText</title>
+</head>
+
+<body>
+  <h1>stackoverflow question: <a href='http://stackoverflow.com/questions/21311299/nodevalue-vs-innerhtml-and-textcontent-how-to-choose'>nodeValue vs innerHTML and textContent. How to choose?</a></h1>
+  The code used in the following exaples is "&ltp&gtHello &ltem&gtcruel&lt/em&gt world&lt/p&gt" which gies the following:
+
+  <p id="testValue">Hello <em>cruel</em> world</p>
+
+  <ul>
+    <li>nodeValue: is a little more confusing to use, but faster than innerHTML.Thing is deprecated. No example, could not understand</li>
+    <li>innerHTML: parses content as HTML and takes longer. Example - innerHtml: Hello &ltem&gtcruel&lt/em&gt world</li>
+    <li>textContent: uses straight text, does not parse HTML, and is faster. Example - textContent: Hello cruel world</li>
+    <li><a href='https://developer.mozilla.org/en-US/docs/Web/API/Node/innerText'>innerText</a>: Non-standard so should not be
+      used. It generally is the equilvalent of what a user would get if they highlighted and copied some textr from a web
+      page.Takes styles into page. It won't get hidden text for instance. Example innerText: Hello cruel world.</li>
+  </ul>
+
+  <p>Examples are in the attached javascript file that writes to the console.
+</body>
+
+<script src="nodeValue_innerHTML_textContent_IinnerText.js"></script>
+
+</html>

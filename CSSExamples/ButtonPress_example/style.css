@@ -1,0 +1,23 @@
+/* . = class */
+/* # = id    */
+
+.button {
+  position: absolute;
+}
+
+#startBtn {
+  font-family: OpenSans;
+  color: #FFFFFF;
+  background-color: #00FF7C;
+  border: 1px solid #00FF7C;
+  border-radius: 5px;
+  box-shadow: 0px 5px 0px #00823F;
+  position: relative;
+  top: 0px;
+  transition: all ease 0.3s;
+}
+
+#startBtn:active {
+  box-shadow: 0 3px 0 #00823F;
+  top: 3px;
+}
